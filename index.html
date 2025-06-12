@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeroMap</title>
+    <link rel="icon" type="image/png" href="img/semfFundo2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+                    ☰
+                </button>
+                <nav>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" onclick="closeMobileMenu()">Início</a></li>
+                        <li><a href="#votacao" onclick="closeMobileMenu()">Votação</a></li>
+                        <li><a href="#funcionalidades" onclick="closeMobileMenu()">Funcionalidades</a></li>
+                        <li><a href="#objetivos" onclick="closeMobileMenu()">Objetivos</a></li>
+                        <li><a href="#desafios" onclick="closeMobileMenu()">Desafios</a></li>
+                        <li><a href="#equipe" onclick="closeMobileMenu()">Equipe</a></li>
+                        <li><a href="#video" onclick="closeMobileMenu()">Comercial</a></li>
+                        <li><a href="#contato" onclick="closeMobileMenu()">Rede Social</a></li>
+                        <li><a href="game/index.html" onclick="closeMobileMenu()">Game</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content fade-in-up">
+            <div class="hero-logo-container">
+                <img src="img/semfFundo2.png" alt="VEROMAP Logo" style="width: 100%; height: 100%; object-fit: contain;" />
+            </div>
+            <p>O projeto Veromap visa democratizar o acesso à informação sobre o turismo em Belém, conectando moradores e visitantes aos pontos turísticos, estabelecimentos comerciais e centros históricos da cidade, tornando a experiência turística mais acessível e enriquecedora para todos.</p>
+            <a href="#funcionalidades" class="cta-button">Descobrir Funcionalidades</a>
+        </div>
+    </section>
+
+    <section id="votacao" class="voting-section">
+        <div class="container">
+            <h2 class="section-title">Ajude o VEROMAP</h2>
+            <div class="voting-content">
+                <p>O VEROMAP está participando do Amazon Hacking! Ajude-nos votando no nosso projeto para que possamos transformar Belém em uma cidade mais conectada e acessível.</p>
+                <div class="voting-options">
+                    <a href="https://amazonhacking.com.br/pt/solutions?query=VEROMAP" target="_blank" class="voting-button">
+                        <span class="vote-icon">🎯</span>
+                        <span class="vote-text">Votar no VEROMAP</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="funcionalidades" class="carousel-section">
+        <div class="container">
+            <h2 class="section-title">Funcionalidades Principais</h2>
+            
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+    <div class="carousel-slide">
+        <div class="slide-content-with-image">
+            <div class="slide-image">
+                <img src="img/TelaInicial.png" alt="Tela inicial do VEROMAP" />
+            </div>
+            <div class="slide-text">
+                <div class="slide-icon">🏠</div>
+                <h3 class="slide-title">Interface Intuitiva</h3>
+                <p class="slide-description">Tela inicial com acesso rápido às principais funcionalidades: criar roteiros personalizados e acessar roteiros salvos com design moderno e navegação simplificada.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carousel-slide">
+        <div class="slide-content-with-image">
+            <div class="slide-image">
+                <img src="img/CriarRoteiro.png" alt="Criar roteiro no VEROMAP" />
+            </div>
+            <div class="slide-text">
+                <div class="slide-icon">🗺️</div>
+                <h3 class="slide-title">Criação de Roteiros</h3>
+                <p class="slide-description">Sistema inteligente para criar roteiros personalizados com busca por pontos turísticos, filtros por categoria (cultura, gastronomia) e informações detalhadas de cada local.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carousel-slide">
+        <div class="slide-content-with-image">
+            <div class="slide-image">
+                <img src="img/InfoLocal.png" alt="Detalhes do ponto turístico" />
+            </div>
+            <div class="slide-text">
+                <div class="slide-icon">📍</div>
+                <h3 class="slide-title">Informações Detalhadas</h3>
+                <p class="slide-description">Cada ponto turístico possui informações completas: fotos, avaliações, descrição, localização exata, horários de funcionamento e tempo estimado de visita.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carousel-slide">
+        <div class="slide-content-with-image">
+            <div class="slide-image">
+                <img src="img/Transito.png" alt="Informações de trânsito" />
+            </div>
+            <div class="slide-text">
+                <div class="slide-icon">🚗</div>
+                <h3 class="slide-title">Integração de Transporte</h3>
+                <p class="slide-description">Informações de trânsito em tempo real, estimativas de tempo de viagem, distâncias e integração com serviços de transporte como Uber para facilitar o deslocamento.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carousel-slide">
+        <div class="slide-content-with-image">
+            <div class="slide-image">
+                <img src="img/MeusRoteiros.png" alt="Meus roteiros salvos" />
+            </div>
+            <div class="slide-text">
+                <div class="slide-icon">📋</div>
+                <h3 class="slide-title">Gestão de Roteiros</h3>
+                <p class="slide-description">Organize e acesse facilmente seus roteiros salvos, tanto personalizados quanto gerados automaticamente, com informações de duração, custo e número de pontos.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carousel-slide">
+        <div class="slide-content-with-image">
+            <div class="slide-image">
+                <img src="img/Conquistas.jpg" alt="Sistema de conquistas" />
+            </div>
+            <div class="slide-text">
+                <div class="slide-icon">🏆</div>
+                <h3 class="slide-title">Sistema de Conquistas</h3>
+                <p class="slide-description">Gamificação com sistema de conquistas e progresso: torne-se um "Mestre dos Roteiros", "Viajante Experiente" ou "Aventureiro" conforme explora novos lugares.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carousel-slide">
+        <div class="slide-content-with-image">
+            <div class="slide-image">
+                <img src="img/Perfil.png" alt="Perfil do usuário" />
+            </div>
+            <div class="slide-text">
+                <div class="slide-icon">👤</div>
+                <h3 class="slide-title">Perfil Personalizado</h3>
+                <p class="slide-description">Perfil completo do usuário com sistema de níveis, pontuação, conquistas desbloqueadas e acesso rápido a roteiros, favoritos e estatísticas pessoais.</p>
+            </div>
+        </div>
+    </div>
+</div>
+                
+                <button class="carousel-arrows prev" onclick="prevSlide()" aria-label="Slide anterior">‹</button>
+                <button class="carousel-arrows next" onclick="nextSlide()" aria-label="Próximo slide">›</button>
+            </div>
+            
+            <div class="carousel-nav" id="carouselNav"></div>
+        </div>
+    </section>
+
+    <section id="objetivos" class="objectives-section">
+        <div class="container">
+            <h2 class="section-title">Objetivos do Projeto</h2>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="objective-icon">🎯</div>
+                    <h3>Valorização do Comércio Local</h3>
+                    <p>Promover e fortalecer o comércio local de Belém, conectando moradores e turistas aos estabelecimentos da região.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">🏛️</div>
+                    <h3>Preservação Cultural</h3>
+                    <p>Destacar e preservar os centros históricos e pontos culturais da cidade, incentivando sua visitação e conhecimento.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">🚶</div>
+                    <h3>Mobilidade Urbana</h3>
+                    <p>Melhorar a experiência de deslocamento na cidade, oferecendo rotas otimizadas e informações de trânsito em tempo real.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">💡</div>
+                    <h3>Inovação Tecnológica</h3>
+                    <p>Desenvolver uma solução tecnológica inovadora que facilite o planejamento e execução de roteiros na cidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="desafios" class="challenges-section">
+        <div class="container">
+            <h2 class="section-title">Desafios</h2>
+            <div class="challenges-container">
+                <div class="challenge-item">
+                    <div class="challenge-icon">🌐</div>
+                    <h3>Integração de Dados</h3>
+                    <p>Desafio de coletar e integrar informações precisas sobre estabelecimentos, pontos turísticos e condições de trânsito em tempo real.</p>
+                </div>
+                <div class="challenge-item">
+                    <div class="challenge-icon">📱</div>
+                    <h3>Experiência do Usuário</h3>
+                    <p>Criar uma interface intuitiva que atenda tanto moradores quanto turistas, com diferentes necessidades e expectativas.</p>
+                </div>
+                <div class="challenge-item">
+                    <div class="challenge-icon">🔄</div>
+                    <h3>Atualização Contínua</h3>
+                    <p>Manter as informações sempre atualizadas, incluindo novos estabelecimentos, mudanças de horários e condições de trânsito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Equipe</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="membros/carlos teixeira.jpg" alt="Carlos Teixeira" />
+                    </div>
+                    <h3>Carlos Teixeira</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="membros/heitor yasuo.jpg" alt="Heitor Yasuo" />
+                    </div>
+                    <h3>Heitor Yasuo</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="membros/deivison tavares.jpg" alt="Deivison Tavares" />
+                    </div>
+                    <h3>Deivison Tavares</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="membros/gustavo yuji.jpg" alt="Gustavo Yuji" />
+                    </div>
+                    <h3>Gustavo Yuji</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="membros/pedro unger.jpg" alt="Pedro Unger" />
+                    </div>
+                    <h3>Pedro Unger</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="membros/arthur siems.jpg" alt="Arthur Siems" />
+                    </div>
+                    <h3>Arthur Siems</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="membros/ilze marli.jpg" alt="Ilze Marli" />
+                    </div>
+                    <h3>Ilze Marli</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="membros/isabel diniz.jpg" alt="Isabel Diniz" />
+                    </div>
+                    <h3>Isabel Diniz</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="video-section">
+        <div class="container">
+            <h2 class="section-title">Comercial</h2>
+            <div class="video-container">
+                <div class="video-responsive">
+                    <div class="video-placeholder">
+                        <small><iframe width="560" height="315" src="https://www.youtube.com/embed/DZJhNFRYESI?si=LpJyw7lBs2BN1h35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VEROMAP</h3>
+                    <p></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Rede Social</h3>
+                    <p></p>
+                    <p></p>
+                    <div class="social-media">
+                        <div class="instagram-container">
+                            <div class="instagram-icon">
+                                <a href="https://www.instagram.com/veromap_/" target="_blank">
+                                    <img src="img/insta.png" alt="Instagram" style="width: 30px; height: 30px; border-radius: 8px;">
+                                </a>
+                            </div>
+                            <a href="https://www.instagram.com/veromap_/" target="_blank" style="text-decoration: none; color: var(--color-beige);">@veromap_</a>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(245, 241, 232, 0.3); padding-top: 20px; margin-top: 30px;">
+                <p>&copy; 2025 VEROMAP</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

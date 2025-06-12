@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VeroMap Game</title>
+    <link rel="icon" type="image/png" href="/img/semfFundo2.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="back-button">
+        <a href="/" class="back-link">
+          <img src="/img/semfFundo2.png" alt="Voltar ao VeroMap" class="back-icon">
+        </a>
+      </div>
+
+      <div id="sidebar">
+        <button id="ranking-toggle" class="three-dots">⋮</button>
+        <div id="ranking-container" class="hidden">
+          <div id="ranking"></div>
+        </div>
+      </div>
+
+      <h1>Descubra o Lugar em Belém</h1>
+
+      <div id="initial-screen" class="initial-screen">
+        <button id="play-btn">Jogar</button>
+      </div>
+
+      <div id="start-screen" class="start-screen" style="display: none;">
+        <h2>Bem-vindo! Qual seu nome?</h2>
+        <input type="text" id="player-name" placeholder="Digite seu nome" />
+        <button id="start-btn" disabled>Começar</button>
+      </div>
+
+      <div id="countdown" style="display: none;">
+        <h2 id="countdown-number">3</h2>
+      </div>
+
+      <!-- Jogo direto, sem seleção de nível -->
+      <div id="game" style="display: none;">
+        <img id="question-image" src="" alt="Imagem do local" />
+        <div id="options">
+          <!-- Botões de alternativa gerados pelo JS -->
+        </div>
+        <div id="info">
+          <p>Vidas: <span id="lives">5</span></p>
+          <p>Pontuação: <span id="score">0</span></p>
+          <p>Nível: <span id="level">1</span></p>
+          <p>Streak: <span id="streak">0</span>x</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Game Over -->
+    <div id="game-over-modal" class="modal">
+      <div class="modal-content">
+        <h2>😢 Game Over!</h2>
+        <p id="game-over-message"></p>
+        <div class="modal-buttons">
+          <button id="restart-btn">Jogar Novamente</button>
+          <button id="back-to-menu-btn">Voltar ao Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Vitória -->
+    <div id="victory-modal" class="modal">
+      <div class="modal-content">
+        <h2>🎉 Parabéns!</h2>
+        <p id="victory-message"></p>
+        <div class="modal-buttons">
+          <button id="play-again-btn">Jogar Novamente</button>
+          <button id="back-to-menu-victory-btn">Voltar ao Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.7/dist/umd/supabase.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
